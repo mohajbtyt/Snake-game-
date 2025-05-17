@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>لعبة الدودة</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>لعبة الدودة</h2>
+
+  <div id="storeBtn">المتجر</div>
+
+  <div id="store">
+    <button onclick="buyUpgrade('speed')">مضاعفة السرعة - 10 نقود</button>
+    <button onclick="buyUpgrade('slow')">إبطاء العقبات - 15 نقود</button>
+    <button onclick="buyUpgrade('goldApple')">تفاح ذهبي - 20 نقود</button>
+    <button onclick="buyUpgrade('skin')">شكل جديد للدودة - 25 نقود</button>
+    <button onclick="closeStore()">إغلاق</button>
+  </div>
+
+  <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+  <div class="controls">
+    <button onclick="updateDirection('UP')">↑</button><br>
+    <button onclick="updateDirection('LEFT')">←</button>
+    <button onclick="updateDirection('DOWN')">↓</button>
+    <button onclick="updateDirection('RIGHT')">→</button>
+  </div>
+
+  <div id="gameOverScreen">
+    <h2>انتهت اللعبة</h2>
+    <button onclick="restartGame()">إعادة اللعب</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

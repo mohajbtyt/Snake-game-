@@ -1,0 +1,68 @@
+
+body {
+  text-align: center;
+  font-family: sans-serif;
+  background: #eee;
+}
+
+#gameCanvas {
+  border: 2px solid #333;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.controls {
+  margin-top: 10px;
+}
+
+.controls button {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  background-color: #4CAF50;
+  color: white;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+#storeBtn {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background-color: #2196F3;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#store {
+  display: none;
+  position: absolute;
+  left: 10px;
+  top: 50px;
+  background: white;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+#store button {
+  display: block;
+  margin: 5px auto;
+  padding: 10px;
+}
+
+#gameOverScreen {
+  display: none;
+  margin-top: 20px;
+}
+
+#gameOverScreen button {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #f44336;
+  color: white;
+  border-radius: 10px;
+}
